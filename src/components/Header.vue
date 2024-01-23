@@ -1,11 +1,12 @@
 <template>
 <!-- 页面头部，分为三个部分 -->
-  <div style="height: 50px; line-height: 50px; border-bottom: 1px solid #ccc; display: flex">
-    <div style="width: 200px; padding-left: 60px; font-weight: bold; color: deepskyblue">家居管理系统</div>
+  <div style="height: 60px; line-height: 60px; border-bottom: 1px solid #ccc; display: flex">
+      <el-image style="width: 120px; height: 60px" v-bind:src="require('@/assets/logo.jpg')"/>
+    <div style="width: 240px; padding-left: 60px; font-weight: bold; color: grey">产品生命周期管理系统</div>
     <div style="flex: 1"></div>
     <div style="width: 100px">
         <el-dropdown>
-          <el-button type="primary">
+          <el-button type="primary" style="height: 60px;size: auto" >
             账号管理<el-icon class="el-icon--right"><arrow-down /></el-icon>
           </el-button>
           <template #dropdown>
@@ -20,7 +21,7 @@
     </div>
   </div>
 </template>
-
+<!-- 16 17 18b 19b-->
 <script>
 import {ElMessage} from 'element-plus'
 import { ElNotification } from 'element-plus'

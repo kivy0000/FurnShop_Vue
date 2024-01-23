@@ -125,7 +125,7 @@ export default {
         date: '2016-05-03',
         name: 'Tom',
         address: 'No. 189, Grove St, Los Angeles',
-        img_path: '../assets/logo.png'
+        img_path: '../assets/logo.jpg'
       }],
       rules: {
         name: [

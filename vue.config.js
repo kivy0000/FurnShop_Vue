@@ -13,6 +13,11 @@ module.exports = {
                     '/api': ''
                 }
             }
-        }
+        },
+        client: {
+            //  解决页面弹出红色报错遮罩层,将overlay设置为false即可
+            overlay: false
+        },
     }
+
 }
