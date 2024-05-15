@@ -12,12 +12,8 @@
         <el-icon>
           <location/>
         </el-icon>
-        <span>库存管理</span>
+        <span>库存</span>
       </template>
-      <el-menu-item-group title="本店库存" >
-        <el-menu-item index="1-1" @click="open('暂未开发')">进货</el-menu-item>
-        <el-menu-item index="1-2" @click="open('暂未开发')">出库</el-menu-item>
-      </el-menu-item-group>
       <el-sub-menu index="1-4">
         <template #title>流转</template>
         <el-menu-item index="1-4-1" @click="open('暂未开发')">内部流转</el-menu-item>
@@ -28,7 +24,7 @@
       <el-icon>
         <icon-menu/>
       </el-icon>
-      <span @click="open('暂未开发')">社区</span>
+      <span @click="open('暂未开发')">内部</span>
     </el-menu-item>
     <el-menu-item index="3">
       <el-icon>
@@ -40,7 +36,7 @@
       <el-icon>
         <setting/>
       </el-icon>
-      <span @click="open('暂未开发')">分店管理</span>
+      <span @click="open('暂未开发')">管理</span>
     </el-menu-item>
   </el-menu>
 </template>

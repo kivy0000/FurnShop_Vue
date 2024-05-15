@@ -5,7 +5,7 @@
     <div style="margin:10px 5px"><!-- 按钮-->
       <!--  添加方法    -->
       <el-button type="primary" @click="add">新增</el-button>
-      <el-button type="button" @click="open('功德+1')">来都来了，点一下吧</el-button>
+      <el-button type="button" @click="open('功德+1')">点一下吧</el-button>
     </div>
 
     <div style="margin:20px 5px"><!--搜索框-->
@@ -24,11 +24,11 @@
           <el-image style="width: 40px; height: 40px" v-bind:src="require('@/assets/6.jpg')"/>
         </template>
       </el-table-column>
-      <el-table-column prop="name" label="家具名称"/>
+      <el-table-column prop="name" label="名称"/>
       <el-table-column prop="maker" label="厂商"/>
-      <el-table-column prop="price" label="单价" width="140"/>
-      <el-table-column prop="sales" label="销量" width="140"/>
-      <el-table-column prop="stock" label="库存" width="140"/>
+      <el-table-column prop="price" label="进程" width="140"/>
+      <el-table-column prop="sales" label="核准" width="140"/>
+      <el-table-column prop="stock" label="单据" width="140"/>
 
       <el-table-column fixed="right" label="操作" width="140">
         <template #default="scope"><!--点击可以#default="scope"获取数据-->
@@ -157,7 +157,6 @@ export default {
   // 初始化钩子函数，不在method里面
   created() {
     this.list();
-
   },
   methods: {
     add() {
